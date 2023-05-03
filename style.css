@@ -6,25 +6,28 @@ body{
     font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
     background-color: hsl(233, 47%, 7%);
     color: white;
-    height: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
 .main-container{
     background-color: hsl(244, 38%, 16%);
     border-radius: 10px;
-    max-width: 1440px;
+    width: 1440px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
 }
 
+/*MAIN CONTENT*/
 .main-content{
+    /*background-color: hsl(244, 38%, 16%);*/
     flex: 1 1 450px;
-    max-width: 650px;
-    margin: 0 auto;
-    padding-top: 50px;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 0 10px;
 }
 
 .main-content span{
@@ -38,6 +41,7 @@ body{
     
 }
 
+/*DATA*/
 .data{
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +51,6 @@ body{
 
 .info{
     flex: 1; 
-    
 }
 
 .info h2{
@@ -61,5 +64,11 @@ body{
     margin: 0 auto;
 }
 
+/*IMG*/
+.main-img img{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 10px 10px 0px;
+}
 
 
