@@ -7,6 +7,11 @@ body{
     background-color: hsl(233, 47%, 7%);
     color: white;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main-container{
@@ -18,7 +23,6 @@ body{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
 }
 
 /*MAIN CONTENT*/
@@ -26,8 +30,13 @@ body{
     /*background-color: hsl(244, 38%, 16%);*/
     flex: 1 1 450px;
     max-width: 750px;
-    margin: 50px auto;
-    padding: 0 10px;
+    margin: 0 auto;
+    padding: 0 60px;
+    align-self: center;
+}
+
+.main-content h1{
+    font-size: 36px;
 }
 
 .main-content span{
@@ -64,11 +73,61 @@ body{
     margin: 0 auto;
 }
 
+
 /*IMG*/
 .main-img img{
     display: flex;
     flex-wrap: wrap;
     border-radius: 0px 10px 10px 0px;
+    width: 600px;
 }
 
+/*RESPONSIVO*/
+@media screen and (max-width: 1080px){ /*MAX-WIDTH = TELAS MENORES QUE 1049 PX*/
+    .main-container{
+        display: block;
+        max-width: 650px;
+    }
+
+    .main-content{
+        text-align: center;
+    }
+
+    .main-img img{
+        width: auto;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-container{
+        display: flex;
+        max-width: 380px;
+    }
+
+    #main-content{
+        order: 2;
+        padding: 0px 40px;
+    }
+
+    #main-img img{
+        background: url(img/image-header-mobile.jpg) no-repeat;
+        order: 1;
+        margin: 0;
+        border-radius: 10px 10px 0px 0px;
+        max-width: 380px;
+    }
+
+    #data{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .info{
+        margin-bottom: 20px;
+    }
+
+}
 
